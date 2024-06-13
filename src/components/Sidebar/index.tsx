@@ -17,10 +17,25 @@ import { IconType } from "react-icons";
 import Player from "@/components/Player";
 
 const LINKS = [
-  { href: "/", label: "Home", icon: LiaHomeSolid },
-  { href: "/somewhere", label: "$SPACE Fair Launch", icon: LiaRocketSolid },
-  { href: "/nogs", label: "nOGs", icon: LiaSunSolid },
-  { href: "/faq", label: "FAQ", icon: LiaQuestionCircle },
+  { href: "/", label: "Home", icon: LiaHomeSolid, isExternal: false },
+  {
+    href: "https://space.nounspace.com",
+    label: "$SPACE Fair Launch",
+    icon: LiaRocketSolid,
+    isExternal: true,
+  },
+  {
+    href: "https://nogs.nounspace.com",
+    label: "nOGs",
+    icon: LiaSunSolid,
+    isExternal: true,
+  },
+  {
+    href: "https://faq.nounspace.com",
+    label: "FAQ",
+    icon: LiaQuestionCircle,
+    isExternal: true,
+  },
 ];
 
 const Sidebar = () => {
@@ -75,10 +90,12 @@ const SidebarLink = ({
   href,
   label,
   icon,
+  isExternal,
 }: {
   href: string;
   label: string;
   icon: IconType;
+  isExternal?: boolean;
 }) => {
   const pathname = usePathname();
 
@@ -92,6 +109,7 @@ const SidebarLink = ({
       alignItems="center"
       gap="2"
       fontWeight="semibold"
+      isExternal={isExternal}
     >
       <Icon
         as={icon}

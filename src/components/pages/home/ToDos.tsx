@@ -1,26 +1,24 @@
 "use client";
 
 import { Box, Text, Flex } from "@chakra-ui/react";
-import { Icon } from "@chakra-ui/react";
-import {
-  MdOutlineCheckBox,
-  MdOutlineCheckBoxOutlineBlank,
-} from "react-icons/md";
+import { Checkbox } from "@chakra-ui/react";
 
 const ToDos = () => {
   return (
     <Box>
       <Flex gap="2">
-        <Icon as={MdOutlineCheckBox} width="6" height="6" />
-        <Text fontWeight="semibold" textDecor="underline" color="purple.500">
-          mint nOGs
-        </Text>
+        <Checkbox colorScheme="purple" isChecked>
+          <Text fontWeight="semibold" textDecor="underline" color="purple.500">
+            mint nOGs
+          </Text>
+        </Checkbox>
       </Flex>
       <Flex gap="2">
-        <Icon as={MdOutlineCheckBoxOutlineBlank} width="6" height="6" />
-        <Text fontWeight="semibold" textDecor="underline" color="purple.500">
-          participate in fair launch
-        </Text>
+        <Checkbox colorScheme="purple">
+          <Text fontWeight="semibold" textDecor="underline" color="purple.500">
+            participate in fair launch
+          </Text>
+        </Checkbox>
       </Flex>
     </Box>
   );
