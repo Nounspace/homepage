@@ -57,7 +57,6 @@ const renderTime = (dimension: string, time: number) => {
 const Timer = () => {
   const startTime = Date.now() / 1000; // use UNIX timestamp in seconds
   const endTime = new Date("2024-07-02T13:11:00Z").getTime() / 1000; // 1:11pm UTC on July 2, 2024
-
   const remainingTime = endTime - startTime;
   const days = Math.ceil(remainingTime / daySeconds);
   const daysDuration = days * daySeconds;
