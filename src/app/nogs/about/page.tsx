@@ -10,8 +10,14 @@ export const metadata: Metadata = {
 
 const AboutTab = () => {
   return (
-    <>
-    </>
+    <Box
+      as="iframe"
+      src="https://paragraph.xyz/@nounspace/nogs"
+      width="100%"
+      height="100vh"
+      frameBorder="0"
+      mt={4}
+    />
   )
 }
 
