@@ -7,7 +7,7 @@ const ToDos = () => {
   return (
     <Box>
       <Flex gap="2">
-        <Checkbox colorScheme="purple" isChecked>
+        <Checkbox colorScheme="purple">
           <Text fontWeight="semibold" textDecor="underline" color="purple.500">
             mint nOGs
           </Text>
