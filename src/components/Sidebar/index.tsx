@@ -41,7 +41,7 @@ const LINKS = [
   },
   {
     id: "faq",
-    href: "https://faq.nounspace.com",
+    href: "/faq/nounspace",
     label: "FAQ",
     icon: LiaQuestionCircle,
     isExternal: true,
