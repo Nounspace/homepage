@@ -34,14 +34,14 @@ const LINKS = [
   },
   {
     id: "nogs",
-    href: "https://nogs.nounspace.com",
+    href: "/nogs/mint",
     label: "nOGs",
     icon: LiaSunSolid,
     isExternal: true,
   },
   {
     id: "faq",
-    href: "https://faq.nounspace.com",
+    href: "/faq/nounspace",
     label: "FAQ",
     icon: LiaQuestionCircle,
     isExternal: true,
