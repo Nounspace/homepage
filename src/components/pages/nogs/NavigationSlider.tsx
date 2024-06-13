@@ -57,6 +57,7 @@ const NavigationSlider = ({ activeLink }: { activeLink: string }) => {
           perMove: 1,
           drag: "free",
           focus: 3,
+          width: "fit-content",
         }}
       >
         {LINKS.map((link, index) => (
