@@ -12,6 +12,44 @@ export const metadata: Metadata = {
     "Join Nounspace, the decentralized social network. Customize your space with fidgets and smart agents. Embrace user control and community building in Web3.",
 };
 
+const dyorLinks = [
+  {
+    imgSrc: '/farcaster-logo.png',
+    alt: 'Farcaster Logo',
+    href: 'https://warpcast.com/~/channel/nounspace'
+  },
+  {
+    imgSrc: '/github-logo.png',
+    alt: 'Github Logo',
+    href: 'https://github.com/Nounspace'
+  },
+  {
+    imgSrc: '/nouns-prophouse.png',
+    alt: 'Nouns Prophouse',
+    href: 'https://prop.house/0x767a3bdf2aa3b3201b794927a997fcf4e50d4702/21'
+  },
+  {
+    imgSrc: '/discord-logo.png',
+    alt: 'Discord Logo',
+    href: 'https://discord.gg/CKbCNWU4'
+  },
+  {
+    imgSrc: '/paragraph-logo.png',
+    alt: 'Paragraph Logo',
+    href: 'https://paragraph.xyz/@nounspace/'
+  },
+  {
+    imgSrc: '/dune-logo.png',
+    alt: 'Dune Logo',
+    href: 'https://dune.com/albitrage/nounspace'
+  },
+  {
+    imgSrc: '/toms-head.png',
+    alt: 'Nounspace Tom',
+    href: 'https://warpcast.com/nounspacetom'
+  }
+]
+
 const HomePage = () => {
   return (
     <>
@@ -43,15 +81,16 @@ const HomePage = () => {
           <Text textStyle="h2" mb="4">
             DYOR
           </Text>
-          <Flex flexWrap="wrap" gap={{ base: "4", md: "8" }}>
-            {Array.from({ length: 6 }).map((_, index) => (
-              <Box
-                key={index}
-                width="50px"
-                height="50px"
-                bgColor="purple.500"
-                borderRadius="full"
-              />
+          <Flex flexWrap="wrap" gap={{ base: "4", md: "6" }}>
+            {dyorLinks.map((link, i) => (
+              <a href={link.href} target="_blank" key={i}>
+                <Image
+                  src={link.imgSrc}
+                  alt={link.alt}
+                  width={48}
+                  height={48}
+                />
+              </a>
             ))}
           </Flex>
         </Box>

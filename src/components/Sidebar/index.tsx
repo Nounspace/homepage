@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Link } from "@chakra-ui/next-js";
 import { Box, Stack, Text, Button, IconButton, Flex } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
+import { Tooltip } from '@chakra-ui/react'
 import {
   LiaRocketSolid,
   LiaHomeSolid,
@@ -47,6 +48,14 @@ const LINKS = [
   },
 ];
 
+const ComingSoonTooltip = ({ children }: { children: any }) => {
+  return (
+    <Tooltip label="Coming soon!" aria-label='Coming soon tooltip' hasArrow placement="top">
+      {children}
+    </Tooltip>
+  )
+}
+
 const Sidebar = () => {
   return (
     <Box
@@ -79,15 +88,19 @@ const Sidebar = () => {
       </Stack>
       <Box mt="40" display={{ base: "none", md: "block" }}>
         <Flex mb="2" gap="2">
-          <Button colorScheme="purple" flexGrow="1">
-            Sign in with{" "}
-            <Icon ml="2" color="white" width="6" height="6" as={SiFarcaster} />
-          </Button>
-          <IconButton
-            colorScheme="purple"
-            aria-label="Edit"
-            icon={<Icon as={LiaPenSolid} width="6" height="6" />}
-          />
+          <ComingSoonTooltip>
+            <Button colorScheme="purple" flexGrow="1">
+              Sign in with{" "}
+              <Icon ml="2" color="white" width="6" height="6" as={SiFarcaster} />
+            </Button>
+          </ComingSoonTooltip>
+          <ComingSoonTooltip>
+            <IconButton
+              colorScheme="purple"
+              aria-label="Edit"
+              icon={<Icon as={LiaPenSolid} width="6" height="6" />}
+            />
+          </ComingSoonTooltip>
         </Flex>
         <Player />
       </Box>
