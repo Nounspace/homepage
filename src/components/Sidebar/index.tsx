@@ -34,7 +34,7 @@ const LINKS = [
   },
   {
     id: "nogs",
-    href: "https://nogs.nounspace.com",
+    href: "/nogs/mint",
     label: "nOGs",
     icon: LiaSunSolid,
     isExternal: true,
