@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Box, Text, Grid, GridItem, Stack, HStack, VStack } from "@chakra-ui/react";
+import { Box, Text, Grid, GridItem, Stack, HStack, VStack, Center } from "@chakra-ui/react";
 import NavigationSlider from "@/components/pages/nogs/NavigationSlider";
 import Image from "next/image";
 
@@ -45,7 +45,7 @@ const InfoCard = () => {
 
 const NogsGif = () => {
   return (
-    <Box borderRadius="2xl" border="1px solid" borderColor="gray.300" overflow="hidden" w="100%" h="100%" position="relative">
+    <Box borderRadius="2xl" border="1px solid" borderColor="gray.300" overflow="hidden" w="100%" h={{ base: "auto", md: "100%" }} position="relative">
       <Image
         src="/nogs-glitchy.gif"
         alt="Glitchy nOGs GIF"
@@ -95,7 +95,9 @@ const MintTab = () => {
             <NounspaceVideo />
           </HStack>
         </VStack>
-        <MintCard />
+        <Center alignSelf="center">
+          <MintCard />
+        </Center>
       </Stack>
     </>
   )
