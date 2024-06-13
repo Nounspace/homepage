@@ -17,20 +17,29 @@ import { IconType } from "react-icons";
 import Player from "@/components/Player";
 
 const LINKS = [
-  { href: "/", label: "Home", icon: LiaHomeSolid, isExternal: false },
   {
+    id: "home",
+    href: "https://nounspace.com",
+    label: "Home",
+    icon: LiaHomeSolid,
+    isExternal: true,
+  },
+  {
+    id: "space",
     href: "https://space.nounspace.com",
     label: "$SPACE Fair Launch",
     icon: LiaRocketSolid,
     isExternal: true,
   },
   {
+    id: "nogs",
     href: "https://nogs.nounspace.com",
     label: "nOGs",
     icon: LiaSunSolid,
     isExternal: true,
   },
   {
+    id: "faq",
     href: "https://faq.nounspace.com",
     label: "FAQ",
     icon: LiaQuestionCircle,

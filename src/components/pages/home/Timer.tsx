@@ -4,7 +4,7 @@ import {
   CountdownCircleTimer,
   ColorFormat,
 } from "react-countdown-circle-timer";
-import { Box, Text, Flex, Grid } from "@chakra-ui/react";
+import { Box, Text, Grid } from "@chakra-ui/react";
 
 const minuteSeconds = 60;
 const hourSeconds = 3600;
