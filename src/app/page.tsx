@@ -14,41 +14,41 @@ export const metadata: Metadata = {
 
 const dyorLinks = [
   {
-    imgSrc: '/farcaster-logo.png',
-    alt: 'Farcaster Logo',
-    href: 'https://warpcast.com/~/channel/nounspace'
+    imgSrc: "/farcaster-logo.png",
+    alt: "Farcaster Logo",
+    href: "https://warpcast.com/~/channel/nounspace",
   },
   {
-    imgSrc: '/github-logo.png',
-    alt: 'Github Logo',
-    href: 'https://github.com/Nounspace'
+    imgSrc: "/github-logo.png",
+    alt: "Github Logo",
+    href: "https://github.com/Nounspace",
   },
   {
-    imgSrc: '/nouns-prophouse.png',
-    alt: 'Nouns Prophouse',
-    href: 'https://prop.house/0x767a3bdf2aa3b3201b794927a997fcf4e50d4702/21'
+    imgSrc: "/nouns-prophouse.png",
+    alt: "Nouns Prophouse",
+    href: "https://prop.house/0x767a3bdf2aa3b3201b794927a997fcf4e50d4702/21",
   },
   {
-    imgSrc: '/discord-logo.png',
-    alt: 'Discord Logo',
-    href: 'https://discord.gg/CKbCNWU4'
+    imgSrc: "/discord-logo.png",
+    alt: "Discord Logo",
+    href: "https://discord.gg/CKbCNWU4",
   },
   {
-    imgSrc: '/paragraph-logo.png',
-    alt: 'Paragraph Logo',
-    href: 'https://paragraph.xyz/@nounspace/'
+    imgSrc: "/paragraph-logo.png",
+    alt: "Paragraph Logo",
+    href: "https://paragraph.xyz/@nounspace/",
   },
   {
-    imgSrc: '/dune-logo.png',
-    alt: 'Dune Logo',
-    href: 'https://dune.com/albitrage/nounspace'
+    imgSrc: "/dune-logo.png",
+    alt: "Dune Logo",
+    href: "https://dune.com/albitrage/nounspace",
   },
   {
-    imgSrc: '/toms-head.png',
-    alt: 'Nounspace Tom',
-    href: 'https://warpcast.com/nounspacetom'
-  }
-]
+    imgSrc: "/toms-head.png",
+    alt: "Nounspace Tom",
+    href: "https://warpcast.com/nounspacetom",
+  },
+];
 
 const HomePage = () => {
   return (
@@ -63,7 +63,7 @@ const HomePage = () => {
           a nounish Farcaster client. On July 2, the gates will open to v0 of
           Nounspace for all nOGs holders. Mint your nOGs today for free
           Nounspace access for life, and participate in the fair launch to be a
-          part of the community-owned future of social media.
+          part of the community-owned future of social.
         </Text>
       </Box>
       <Grid
