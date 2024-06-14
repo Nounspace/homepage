@@ -72,7 +72,7 @@ const Timer = () => {
     >
       <CountdownCircleTimer
         {...timerProps}
-        colors="#FF430F"
+        colors="#13FFD9"
         duration={daysDuration}
         initialRemainingTime={remainingTime}
       >
@@ -84,7 +84,7 @@ const Timer = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#FDC614"
+        colors="#FF0090"
         duration={daySeconds}
         initialRemainingTime={remainingTime % daySeconds}
         onComplete={(totalElapsedTime) => ({
@@ -99,7 +99,7 @@ const Timer = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#3A78D5"
+        colors="#FFF22F"
         duration={hourSeconds}
         initialRemainingTime={remainingTime % hourSeconds}
         onComplete={(totalElapsedTime) => ({
@@ -114,7 +114,7 @@ const Timer = () => {
       </CountdownCircleTimer>
       <CountdownCircleTimer
         {...timerProps}
-        colors="#7EA757"
+        colors="#7EEC3D"
         duration={minuteSeconds}
         initialRemainingTime={remainingTime % minuteSeconds}
         onComplete={(totalElapsedTime) => ({

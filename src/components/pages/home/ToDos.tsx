@@ -21,7 +21,7 @@ const ToDos = () => {
       <Flex gap="2">
         <Checkbox colorScheme="purple"></Checkbox>
         <Link
-          href="/faq/nounspace"
+          href="https://space.nounspace.com"
           fontWeight="semibold"
           textDecor="underline"
           color="purple.500"
