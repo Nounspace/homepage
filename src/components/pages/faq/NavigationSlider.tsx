@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { Link } from "@chakra-ui/next-js";
 import { Box, Grid, Text, Flex } from "@chakra-ui/react";
 
@@ -10,21 +11,23 @@ const LINKS = [
   {
     id: "nounspace",
     label: "Nounspace",
-    href: "/faq/nounspace"
+    href: "/faq/nounspace",
   },
   {
     id: "space",
     label: "$SPACE",
-    href: "/faq/space"
+    href: "/faq/space",
   },
   {
     id: "nogs",
     label: "nOGs",
-    href: "/faq/nogs"
-  }
+    href: "/faq/nogs",
+  },
 ];
 
 const NavigationSlider = ({ activeLink }: { activeLink: string }) => {
+  const router = useRouter();
+
   return (
     <Box
       sx={{
@@ -44,8 +47,28 @@ const NavigationSlider = ({ activeLink }: { activeLink: string }) => {
         ".splide__arrow--next": {
           right: 0,
         },
+        ".splide__list": {
+          alignItems: "center",
+        },
         ".splide__pagination": {
           display: "none",
+        },
+        ".splide__track--nav>.splide__list>.splide__slide": {
+          position: "relative",
+        },
+        ".splide__track--nav>.splide__list>.splide__slide.is-active": {
+          border: 0,
+          _after: {
+            content: `""`,
+            position: "absolute",
+            bottom: "4px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "16px",
+            borderRadius: "6px",
+            height: "4px",
+            background: "green.300",
+          },
         },
       }}
     >
@@ -58,6 +81,16 @@ const NavigationSlider = ({ activeLink }: { activeLink: string }) => {
           drag: "free",
           focus: 3,
           width: "fit-content",
+          isNavigation: true,
+        }}
+        onMounted={(splide) => {
+          splide.go(LINKS.findIndex((link) => link.id === activeLink));
+        }}
+        onMove={(e) => {
+          if (LINKS[e.index].id === activeLink) {
+            return;
+          }
+          router.push(LINKS[e.index].href);
         }}
       >
         {LINKS.map((link, index) => (
@@ -71,18 +104,6 @@ const NavigationSlider = ({ activeLink }: { activeLink: string }) => {
                 position="relative"
                 _hover={{
                   textDecor: "none",
-                }}
-                _after={{
-                  content: `""`,
-                  position: "absolute",
-                  bottom: "-6px",
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                  width: "16px",
-                  borderRadius: "6px",
-                  height: "4px",
-                  background:
-                    activeLink === link.id ? "green.300" : "transparent",
                 }}
               >
                 {link.label}
