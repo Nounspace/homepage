@@ -5,6 +5,7 @@ import NavigationSlider from "@/components/pages/faq/NavigationSlider";
 const questions = [
   {
     question: "What is Nounspace?",
+
     answer:
       "Nounspace is a customizable social media platform built on the Farcaster protocol. It allows users to create profiles, customize their spaces with themes and fidgets (miniature applications), explore a diverse spectrum of bespoke spaces, and participate in community-governance to shape the future of social media.",
   },
@@ -27,6 +28,7 @@ const questions = [
     question: "What are nOGs?",
     answer:
       "nOGs are Nounspace OG NFTs. These NFTs feature hand-drawn frames by @latsko.eth, masked over 1,011 different pieces of CC0 artwork and photography. Minting nOGs grants the earliest access to customize your space on Nounspace and free premium access for life.",
+
   },
 ];
 
