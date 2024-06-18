@@ -11,12 +11,12 @@ const questions = [
   {
     question: "What benefits do nOG holders get?",
     answer:
-      "nOGs holders receive the earliest access to customize their space on Nounspace starting July 2nd. Additionally, they get free premium access for life, ensuring they can fully utilize all features and customizations available on the platform.",
+      "nOGs holders receive the earliest access to customize their space on Nounspace starting July 2nd. Additionally, they get free premium access for life, ensuring they can fully utilize all features and customizations available on the platform to their fullest extent.",
   },
   {
     question: "Why should I mint an nOG?",
     answer:
-      "Minting an nOG not only provides you with early access and premium features on Nounspace but also makes you part of an exclusive community. You'll have the opportunity to shape the development and future of Nounspace, and enjoy a unique and highly customizable social media experience.",
+      "Minting nOGs not only provides you with early access and premium features on Nounspace but also makes you part of an exclusive community. You'll have the opportunity to shape the development and future of Nounspace, and enjoy a unique and highly customizable social media experience.",
   },
 ];
 
