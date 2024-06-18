@@ -75,15 +75,17 @@ const NounspaceVideo = () => {
 
 const MintCard = () => {
   return (
-    <iframe
-      style={{ width: "100%", height: "100vh", minWidth: "360px" }}
-      srcDoc={`
-        <html><body>
-        <link rel="stylesheet" href="https://mint.highlight.xyz/assets/embed.css" />
-        <div data-widget="highlight-mint-card" data-mint-collection-id="663d2717dffb7b3a490f398f"  ></div>
-        <script type="module" crossorigin="true" src="https://mint.highlight.xyz/assets/embed.js?v=1"></script>
-        </body></html>
-      `}
+    <Box
+      width="100%"
+      height="100vh"
+      minWidth="360px"
+      dangerouslySetInnerHTML={{
+        __html: `
+          <link rel="stylesheet" href="https://mint.highlight.xyz/assets/embed.css" />
+          <div data-widget="highlight-mint-card" data-mint-collection-id="663d2717dffb7b3a490f398f"></div>
+          <script type="module" crossorigin="true" src="https://mint.highlight.xyz/assets/embed.js?v=1"></script>
+        `,
+      }}
     />
   );
 };
