@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
+'use client';
 
 import { Box, Text, Stack, HStack, VStack, Center } from "@chakra-ui/react";
 import NavigationSlider from "@/components/pages/nogs/NavigationSlider";
 import Image from "next/image";
-
-export const metadata: Metadata = {
-  title: "nOGs | Nounspace",
-  description: "",
-};
+import { useEffect } from "react";
 
 const InfoCard = () => {
   return (
@@ -71,20 +67,34 @@ const NounspaceVideo = () => {
 };
 
 const MintCard = () => {
-  return (
-    <Box
-      width="100%"
-      height="100vh"
-      minWidth="360px"
-      dangerouslySetInnerHTML={{
-        __html: `
-          <link rel="stylesheet" href="https://mint.highlight.xyz/assets/embed.css" />
-          <div data-widget="highlight-mint-card" data-mint-collection-id="663d2717dffb7b3a490f398f"></div>
-          <script type="module" crossorigin="true" src="https://mint.highlight.xyz/assets/embed.js?v=1"></script>
-        `,
-      }}
-    />
-  );
+    useEffect(() => {
+        // Load CSS
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://mint.highlight.xyz/assets/embed.css';
+        document.head.appendChild(link);
+
+        // Load JS
+        const script = document.createElement('script');
+        script.src = 'https://mint.highlight.xyz/assets/embed.js?v=1';
+        script.type = 'module';
+        script.crossOrigin = 'true';
+        document.body.appendChild(script);
+
+        // Cleanup function to remove the script and stylesheet when the component is unmounted
+        return () => {
+            document.head.removeChild(link);
+            document.body.removeChild(script);
+        };
+    }, []);
+
+    return (
+        <div
+            data-widget="highlight-mint-card"
+            data-use-content-as-loading="true"
+            data-mint-collection-id="663d2717dffb7b3a490f398f"
+        ></div>
+    );
 };
 
 const MintTab = () => {
