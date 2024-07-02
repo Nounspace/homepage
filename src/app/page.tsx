@@ -54,16 +54,12 @@ const HomePage = () => {
   return (
     <>
       <Box borderRadius="2xl" border="1px solid" borderColor="gray.300" p="4">
-        <Text textStyle="h2">Welcome to Nounspace</Text>
+        <Text textStyle="h2">Nounspace is not yet supported on mobile</Text>
         <Text textStyle="h3" mt="4">
-          Your space to create, customize, and explore.
+          Stay tuned for native iOS and Android apps, and come back on desktop in the meantime.
         </Text>
         <Text mt="4">
-          Nounspace received a $100k grant from Nouns DAO on April 1st to build
-          a nounish Farcaster client. On July 2, the gates will open to v0 of
-          Nounspace for all nOGs holders. Mint your nOGs today for free
-          Nounspace access for life, and participate in the fair launch to be a
-          part of the community-owned future of social.
+         Fear not, not all hope for mobile users is lost! You can still learn about Nounspace, participate in the fair launch by depositing stETH, and/or mint nOGs, which give you access to customize your space and homebase plus free nounspace access.
         </Text>
       </Box>
       <Grid
