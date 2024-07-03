@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Box, Grid, Text, Flex } from "@chakra-ui/react";
 import ToDos from "@/components/pages/home/ToDos";
-import Timer from "@/components/pages/home/Timer";
 
 export const metadata: Metadata = {
   title:
@@ -56,10 +55,14 @@ const HomePage = () => {
       <Box borderRadius="2xl" border="1px solid" borderColor="gray.300" p="4">
         <Text textStyle="h2">Nounspace is not yet supported on mobile</Text>
         <Text textStyle="h3" mt="4">
-          Stay tuned for native iOS and Android apps, and come back on desktop in the meantime.
+          Stay tuned for native iOS and Android apps, and come back on desktop
+          in the meantime.
         </Text>
         <Text mt="4">
-         Fear not, not all hope for mobile users is lost! You can still learn about Nounspace, participate in the fair launch by depositing stETH, and/or mint nOGs, which give you access to customize your space and homebase plus free nounspace access.
+          Fear not, not all hope for mobile users is lost! You can still learn
+          about Nounspace, participate in the fair launch by depositing stETH,
+          and/or mint nOGs, which give you access to customize your space and
+          homebase plus free nounspace access.
         </Text>
       </Box>
       <Grid
@@ -102,16 +105,31 @@ const HomePage = () => {
         </Box>
         <Box
           borderRadius="2xl"
+          border="1px solid"
+          borderColor="gray.300"
           overflow="hidden"
-          bgImage="url(./space-bg.png)"
-          bgPos="center"
-          bgRepeat="no-repeat"
-          bgSize="110%"
-          display="grid"
-          placeContent="center"
+          w="100%"
+          h="100%"
+          position="relative"
           order={{ base: -1, md: 0 }}
+          _before={{
+            content: '""',
+            display: "block",
+            paddingTop: "56.25%",
+          }}
         >
-          <Timer />
+          <Box
+            as="iframe"
+            src="https://player.vimeo.com/video/973566244?h=c6cefbe4c3"
+            title="Nounspace Video"
+            position="absolute"
+            top="0"
+            left="0"
+            width="100%"
+            height="100%"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
         </Box>
       </Grid>
     </>
