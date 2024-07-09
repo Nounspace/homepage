@@ -60,9 +60,8 @@ const HomePage = () => {
         </Text>
         <Text mt="4">
           Fear not, not all hope for mobile users is lost! You can still learn
-          about Nounspace, participate in the fair launch by depositing stETH,
-          and/or mint nOGs, which give you access to customize your space and
-          homebase plus free nounspace access.
+          about Nounspace, participate in the $SPACE fair launch, or mint nOGs,
+          the early access NFT that gives you free premium Nounspace for life.
         </Text>
       </Box>
       <Grid
