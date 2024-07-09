@@ -19,7 +19,7 @@ const InfoCard = () => {
         <Text>1. Earliest access to customize your space</Text>
         <Text>2. Free, premium Nounspace access for life</Text>
         <Text>3. Infinite Possibilities</Text>
-        <Text mt="4">Mint today with the fidget on the right! →→→</Text>
+        <Text mt="4">Scroll down to mint! ↓</Text>
       </Box>
     </>
   );
