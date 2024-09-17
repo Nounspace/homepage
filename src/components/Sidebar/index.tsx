@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { Link } from "@chakra-ui/next-js";
 import { Box, Stack, Text, Button, IconButton, Flex } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
-import { Tooltip } from "@chakra-ui/react";
 import {
   LiaRocketSolid,
   LiaHomeSolid,
@@ -48,20 +47,6 @@ const LINKS = [
   },
 ];
 
-const ComingSoonTooltip = ({
-  children,
-  label,
-}: {
-  children: React.ReactNode;
-  label: string;
-}) => {
-  return (
-    <Tooltip label={label} aria-label={label} hasArrow placement="top">
-      {children}
-    </Tooltip>
-  );
-};
-
 const Sidebar = () => {
   return (
     <Box
@@ -94,7 +79,7 @@ const Sidebar = () => {
       </Stack>
       <Box mt="40" display={{ base: "none", md: "block" }}>
         <Flex mb="2" gap="2">
-          <ComingSoonTooltip label="v0 launch July 2nd">
+          <Link href="https://nounspace.com" isExternal>
             <Button colorScheme="purple" flexGrow="1">
               Sign in with{" "}
               <Icon
@@ -105,14 +90,14 @@ const Sidebar = () => {
                 as={SiFarcaster}
               />
             </Button>
-          </ComingSoonTooltip>
-          <ComingSoonTooltip label="v0 launch July 2nd">
+          </Link>
+          <Link href="https://nounspace.com" isExternal>
             <IconButton
               colorScheme="purple"
               aria-label="Edit"
               icon={<Icon as={LiaPenSolid} width="6" height="6" />}
             />
-          </ComingSoonTooltip>
+          </Link>
         </Flex>
         <Player />
       </Box>
