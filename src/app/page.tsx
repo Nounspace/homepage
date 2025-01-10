@@ -38,12 +38,12 @@ const dyorLinks = [
     href: "https://paragraph.xyz/@nounspace/",
   },
   {
-    imgSrc: "/basescan_logo.png",
+    imgSrc: "/basescan_logo.jpg",
     alt: "BaseScan Logo",
     href: "https://basescan.org/address/0x48C6740BcF807d6C47C864FaEEA15Ed4dA3910Ab",
   },
   {
-    imgSrc: "/dexscreener_logo",
+    imgSrc: "/dexscreener_logo.webp",
     alt: "DexScreener logo",
     href: "https://dexscreener.com/base/0x48C6740BcF807d6C47C864FaEEA15Ed4dA3910Ab",
   },
