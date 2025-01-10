@@ -6,9 +6,9 @@ import ToDos from "@/components/pages/home/ToDos";
 
 export const metadata: Metadata = {
   title:
-    "Welcome to Nounspace - Your Decentralized, Customizable Social Network",
+    "Welcome to nounspace - the customizable Farcaster client with infinite possibilities",
   description:
-    "Join Nounspace, the decentralized social network. Customize your space with fidgets and smart agents. Embrace user control and community building in Web3.",
+    "Customize your space with Themes, Fidgets, and Tabs. Embrace user control and community building in Web3.",
 };
 
 const dyorLinks = [
@@ -38,14 +38,14 @@ const dyorLinks = [
     href: "https://paragraph.xyz/@nounspace/",
   },
   {
-    imgSrc: "/dune-logo.png",
-    alt: "Dune Logo",
-    href: "https://dune.com/albitrage/nounspace",
+    imgSrc: "/basescan_logo.png",
+    alt: "BaseScan Logo",
+    href: "https://basescan.org/address/0x48C6740BcF807d6C47C864FaEEA15Ed4dA3910Ab",
   },
   {
-    imgSrc: "/toms-head.png",
-    alt: "Nounspace Tom",
-    href: "https://warpcast.com/nounspacetom",
+    imgSrc: "/dexscreener_logo",
+    alt: "DexScreener logo",
+    href: "https://dexscreener.com/base/0x48C6740BcF807d6C47C864FaEEA15Ed4dA3910Ab",
   },
 ];
 
@@ -53,15 +53,15 @@ const HomePage = () => {
   return (
     <>
       <Box borderRadius="2xl" border="1px solid" borderColor="gray.300" p="4">
-        <Text textStyle="h2">Nounspace is not yet supported on mobile</Text>
+        <Text textStyle="h2">nounspace is not yet supported on mobile</Text>
         <Text textStyle="h3" mt="4">
           Stay tuned for native iOS and Android apps, and come back on desktop
           in the meantime.
         </Text>
         <Text mt="4">
           Fear not, not all hope for mobile users is lost! You can still learn
-          about Nounspace, participate in the $SPACE fair launch, or mint nOGs,
-          the early access NFT that gives you free premium Nounspace for life.
+          about nounspace, participate in the $SPACE fair launch, or mint nOGs,
+          the early access NFT that gives you free premium nounspace for life.
         </Text>
       </Box>
       <Grid
@@ -71,7 +71,7 @@ const HomePage = () => {
       >
         <Box borderRadius="2xl" border="1px solid" borderColor="gray.300" p="4">
           <Text textStyle="h2" mb="4">
-            Nounspace to-do’s:
+            nounspace to-do’s:
           </Text>
           <ToDos />
         </Box>
